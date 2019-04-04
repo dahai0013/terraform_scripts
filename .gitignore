@@ -1,0 +1,8 @@
+
+*.exe
+*.bat
+*.json
+*.txt
+2vsrx_1vmx_3ubuntus/terraform.tfvars
+*.backup
+*.tfstate
