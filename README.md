@@ -38,29 +38,31 @@ but instead we have to fit the infrastructure as close of possible to the need.
 ## Phase 2
 
 
-# Create VPC-iGW-VGW + Subnet + Linux and vSRX Instance
-#
-# 0- AWS access and secret key to access AWS
-# 1- create an VPC
-# 1a- create an Internet Gateway
-# 1b- create an Route in the RT ( for the management )
-#
-# 1c- Security Groups ( for Management, IPSec, ... )
-#
-# create Subnets:
-# 2a- create Private subnets ( to VM instances ): private1, private2, private3, . . .
-# 2b- create Public IPSec subnet ( for Data IPSec Tunnel)
-# 2c- create Public Mgmt subnet ( for vSRX Mgmt)
-# 2d- associate Public subnet to Main routing table
-# 2e- associate Mgmt subnet to Main routing table
-#
-# 3- Create an Key pair to access the VM  <<<<<<<<<<<<< not use at this stage , but will be ( done on the AWS GUI )
-#
-# 4- create an Ubuntu instance
-# 5- create an vSRX instance
-# 6- add Network interface to the vSRX Instance
-#
-# 7- reboot the vSRX EC2 instance ( to load the new interfaces )
+ Create VPC-iGW-VGW + Subnet + Linux and vSRX Instance
+
+ 0- AWS access and secret key to access AWS
+
+ 1- create an VPC
+ 1a- create an Internet Gateway
+ 1b- create an Route in the RT ( for the management )
+
+ 1c- Security Groups ( for Management, IPSec, ... )
+
+ create Subnets:
+ 2a- create Private subnets ( to VM instances ): private1, private2, private3, . . .
+ 2b- create Public IPSec subnet ( for Data IPSec Tunnel)
+ 2c- create Public Mgmt subnet ( for vSRX Mgmt)
+ 2d- associate Public subnet to Main routing table
+ 2e- associate Mgmt subnet to Main routing table
+
+ 3- Create an Key pair to access the VM  <<<<<<<<<<<<< not use at this stage , but will be ( done on the AWS GUI )
+
+ 4- create an Ubuntu instance
+ 5- create an vSRX instance
+ 6- create en vMX instance
+ 7- add Network interface to the vSRX / vMX Instance
+
+ 8- reboot the vSRX EC2 instance ( to load the new interfaces )
 
 
 
