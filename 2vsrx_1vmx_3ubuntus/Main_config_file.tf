@@ -19,6 +19,7 @@
 
 # define variables and point to terraform.tfvars
 variable vpc_name {}
+variable my_cidr_block {}
 variable "access_key" {}
 variable "secret_key" {}
 variable "region" {}
@@ -47,7 +48,7 @@ provider "aws" {
 
 # 1- create an VPC in aws
 resource "aws_vpc" "vpc" {
-  cidr_block           = "10.0.0.0/16"
+  cidr_block           = "${var.my_cidr_block }"
   enable_dns_support   = true
   enable_dns_hostnames = true
   tags {
