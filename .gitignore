@@ -8,3 +8,4 @@
 *.tfstate
 3vmx_triangle_arch/terraform.tfvars
 1vmx/terraform.tfvars
+*.tfvars

@@ -79,7 +79,6 @@ resource "aws_route" "internet_access" {
 #}
 
 
-/*
 # 7- reboot the vSRX EC2 instannce ( to load the new interfaces )
 resource "null_resource" "example1" {
     provisioner "local-exec" {
@@ -87,6 +86,5 @@ resource "null_resource" "example1" {
   }
   depends_on = ["aws_network_interface.vSRX1_ge0-0-2"]
 }
-*/
 
 
